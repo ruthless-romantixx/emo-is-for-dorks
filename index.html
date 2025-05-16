@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+  <script type="text/javascript">
+function tb8_makeArray(n){
+this.length = n;
+return this.length;
+}
+tb8_messages = new tb8_makeArray(3);
+tb8_messages[0] = "RUTHLESS-ROMANTIXX";
+tb8_messages[1] = "RUTHLESS-ROMANTIXX";
+tb8_messages[2] = "RUTHLESS-ROMANTIXX";
+tb8_rptType = 'infinite';
+tb8_rptNbr = 5;
+tb8_speed = 100;
+tb8_delay = 2000;
+var tb8_counter=1;
+var tb8_currMsg=0;
+var tb8_tekst ="";
+var tb8_i=0;
+var tb8_TID = null;
+function tb8_pisi(){
+tb8_tekst = tb8_tekst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+document.title = tb8_tekst;
+tb8_sp=tb8_speed;
+tb8_i++;
+if (tb8_i==tb8_messages[tb8_currMsg].length){
+tb8_currMsg++; tb8_i=0; tb8_tekst="";tb8_sp=tb8_delay;
+}
+if (tb8_currMsg == tb8_messages.length){
+if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
+clearTimeout(tb8_TID);
+return;
+}
+tb8_counter++;
+tb8_currMsg = 0;
+}
+tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+}
+tb8_pisi()
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUTHLESS-ROMANTIXX</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link rel="icon" type="image/x-icon" href="/images/rrxfavicon.ico">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+     <style>
+     body {
+     	cursor: url(https://ruthless-romantixx.nekoweb.org/cursor.png): default;
+     }
+     header {
+       display: block;
+       margin: 100;
+       text-align: center;
+       width: 50%;
+       border: 30px solid white;
+       border-image: url(https://ruthless-romantixx.neocities.org/images/bwchecksmall.jpg) 90 0 90 0 round;
+     }
+     div {
+       display: block, inline;
+       margin: 10px 30px;
+       text-align: center;
+       width: 50%;
+       color: white;
+       background: rgba(225, 0, 0, 0.5);
+       border: 2px solid white;
+       
+     }
+     navbar {
+       display: block;
+       margin: 100;
+       text-align: center;
+       width: 50%;
+       
+     }
+     footer {
+      display: block;
+      margin: 10px 30px;
+      text-align: center;
+      width: 50%;
+     }
+     ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     .rose-garden {
+        display: block;
+       margin: 10px 630px;
+       text-align: center;
+       width: 50%;
+       color: white;
+       background: rgba(225, 0, 0, 0.5);
+       border: 2px solid white;
+       border-radius: 25px;
+     }
+     .site-entrance {
+        margin: 10px 30px;
+       text-align: center;
+       width: 50%;
+       color: white;
+       background: rgba(225, 0, 0, 0.5);
+       border: 2px solid white;
+       border-radius: 25px;
+     }
+     
+     </style>
+  </head>
+  <body>
+  <header>
+    <h1>Emo: It's punk for dorks.</h1>
+  </header>
+    <div>
+    <p><i>The 8th-coolest place on the Interweb for misfit types and bleeding hearts!</i><p>
+    <p>RUTHLESS ROMANTIX<sub>X</sub> is haphazardly made from love and ink.</p>
+    <p>It's held together with repurposed belt studs,</p>
+    <p>And checkered fabric ripped from old Vans.</p>
+    <p><small>There's...also some HTML in there, I think.</small></p>
+    <p>In regards to being a "home" to nerd stuff and eyeliner rock,</p>
+    <p>It isn't the first, nor the last.</p>
+    <p>But I just hope that everyone can find something of value here!</p>
+    <p>In fact, the only thing it's missing is <b>you</b>.</p>
+    <p><small>Probably.</small></p>
+    </div>
+    <div>
+    <p><a style= "color:White;" href= "https://ruthless-romantixx.nekoweb.org/homepage.html">CLICK HERE TO ENTER SITE</a></p>
+    </div>
+  <footer>
+    <p>Ashton Hawthorne's "RUTHLESS ROMANTIX<sub>X</sub>"</p>
+  </footer>
+  </body>
+</html>
